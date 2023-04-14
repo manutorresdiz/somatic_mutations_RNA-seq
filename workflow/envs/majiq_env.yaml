@@ -1,0 +1,5 @@
+dependencies:
+  - htslib>=1.10
+  - python>=3.8
+  - setuptools>=45
+  - hdf5=1.10.5

@@ -1,0 +1,5 @@
+name: gatk4_env
+channels:
+  - bioconda
+dependencies:
+  - gatk4

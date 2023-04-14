@@ -1,0 +1,5 @@
+name: picards_env
+channels:
+  - bioconda
+dependencies:
+  - picard

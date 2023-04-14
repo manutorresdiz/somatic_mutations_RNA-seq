@@ -1,0 +1,14 @@
+name: ggsashimi
+channels:
+  - bioconda
+  - conda-forge
+  - r
+dependencies:
+  - python>=3.0.0
+  - pysam>=0.10.0
+  - r>=3.3
+  - r-ggplot2==2.2.1
+  - r-data.table==1.10.4
+  - r-gridextra==2.2.1
+  - r-gtable
+  - r-svglite
