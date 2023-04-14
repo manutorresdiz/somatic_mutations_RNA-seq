@@ -1,0 +1,42 @@
+files_path: "/mnt/isilon/dbgap/prj_10088/phs000218.v2021/files/fastq_files/"
+samples_file: "metadata/target_samples_data_unique.tsv"
+#load here your STAR genome path
+STAR_genome: "/mnt/isilon/thomas-tikhonenko_lab/data/index/GRCh38.p13/star.2.7.3a_gencode.v37_GRCh38.13/"
+comparisons: "metadata/comparisons_target.tsv"
+
+## genome is for majiq analisys. Make sure chr nomenclature matches
+genome: "/mnt/isilon/thomas-tikhonenko_lab/data/index/gencode.v37.annotation.gff3"
+#genome: "/mnt/isilon/thomas-tikhonenko_lab/data/index/ensembl.Homo_sapiens.GRCh38.94.gff3"
+build_config: "metadata/majiq_config_file.txt"
+salmon_genome: "/scr1/users/torresdizm/genomes/GRCh38.p13/GRCh38.v33_salmon/"
+
+
+
+####################################################################################
+##################################### GATK #########################################
+####################################################################################
+
+
+## genome in fasta format for gatk needs .bai and .dict to work
+
+#version with chr for chromosomes
+fasta_genome: "/mnt/isilon/thomas-tikhonenko_lab/data/index/hg38.fa"
+
+#ensembl format without chr
+#fasta_genome: "/mnt/isilon/thomas-tikhonenko_lab/data/index/ensembl/Homo_sapiens.GRCh38.dna.primary_assembly.fa"
+
+## variations file for gatk, needs to be indexed
+# version with chr for chromosomes
+
+variations: "/mnt/isilon/thomas-tikhonenko_lab/data/index/00-common_all.vcf.gz"
+
+
+# ensembl format without chr
+
+#variations: "/mnt/isilon/thomas-tikhonenko_lab/data/index/1000GENOMES-phase_3.vcf"
+
+genome_version: "hg38"
+
+#data source here is only for somatic mutations
+
+data_source: "/mnt/isilon/thomas-tikhonenko_lab/data/index/FuncotatorDataSource/funcotator_dataSources.v1.7.20200521s/"
