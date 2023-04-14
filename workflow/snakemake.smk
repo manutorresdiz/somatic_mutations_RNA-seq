@@ -46,7 +46,7 @@ rule STAR_align:
 		mem=lambda wildcards, attempt: attempt * 120,
 		time = "32:00:00"
 	conda:
-		"envs/Star.yaml"
+		"envs/Star_env.yaml"
 	output:
 		"data/bam_files/{unit}_Aligned.sortedByCoord.out.bam"
 	shell:
